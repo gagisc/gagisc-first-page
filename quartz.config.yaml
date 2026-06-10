@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: gagisc.github.io/quartz
+  baseUrl: gagisc.github.io
   ignorePatterns:
     - private
     - templates
@@ -213,7 +213,7 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
+        GitHub: https://github.com/gagisc/gagisc.github.io
         Discord Community: https://discord.gg/cRFFHYye7t
   - source: github:quartz-community/recent-notes
     enabled: false
