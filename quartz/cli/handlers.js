@@ -731,20 +731,12 @@ export async function handleSync(argv) {
   console.log(`\n${styleText(["bgGreen", "black"], ` Quartz v${version} `)}\n`)
   console.log("Backing up your content")
 
+  const contentStat = await fs.promises.lstat(contentFolder)
+  const isLinkedContent = contentStat.isSymbolicLink()
+
   if (argv.commit) {
-    const contentStat = await fs.promises.lstat(contentFolder)
-    if (contentStat.isSymbolicLink()) {
-      const linkTarg = await fs.promises.readlink(contentFolder)
-      console.log(styleText("yellow", "Detected symlink, trying to dereference before committing"))
-
-      // stash symlink file
-      await stashContentFolder(contentFolder)
-
-      // follow symlink and copy content
-      await fs.promises.cp(linkTarg, contentFolder, {
-        recursive: true,
-        preserveTimestamps: true,
-      })
+    if (isLinkedContent) {
+      console.log(styleText("yellow", "Detected symlinked content folder; syncing directly through the link"))
     }
 
     const currentTimestamp = new Date().toLocaleString("en-US", {
@@ -755,13 +747,15 @@ export async function handleSync(argv) {
     spawnSync("git", ["add", "."], { stdio: "inherit" })
     spawnSync("git", ["commit", "-m", commitMessage], { stdio: "inherit" })
 
-    if (contentStat.isSymbolicLink()) {
+    if (!isLinkedContent) {
       // put symlink back
       await popContentFolder(contentFolder)
     }
   }
 
-  await stashContentFolder(contentFolder)
+  if (!isLinkedContent) {
+    await stashContentFolder(contentFolder)
+  }
 
   if (argv.pull) {
     console.log(
@@ -774,12 +768,16 @@ export async function handleSync(argv) {
         styleText("red", "An error occurred while pulling updates from your repository.") +
           "\nCheck your network connection and git credentials.",
       )
-      await popContentFolder(contentFolder)
+      if (!isLinkedContent) {
+        await popContentFolder(contentFolder)
+      }
       return
     }
   }
 
-  await popContentFolder(contentFolder)
+  if (!isLinkedContent) {
+    await popContentFolder(contentFolder)
+  }
   if (argv.push) {
     console.log("Pushing your changes")
     const currentBranch = execSync("git rev-parse --abbrev-ref HEAD").toString().trim()
