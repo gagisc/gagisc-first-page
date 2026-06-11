@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: gagisc
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -16,9 +16,10 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
-      code: IBM Plex Mono
+      title: Atkinson Hyperlegible Mono
+      header: Atkinson Hyperlegible Mono
+      body: Atkinson Hyperlegible
+      code: Atkinson Hyperlegible
     colors:
       lightMode:
         light: "#faf8f8"
