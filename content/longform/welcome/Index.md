@@ -4,7 +4,6 @@ longform:
   title: gagisc
   workflow: Default Workflow
   sceneFolder: /
-  scenes:
-    - crafts
+  scenes: []
   ignoredFiles: []
 ---
