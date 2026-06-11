@@ -1,7 +1,7 @@
 ---
 longform:
   format: scenes
-  title: welcome
+  title: gagisc
   workflow: Default Workflow
   sceneFolder: /
   scenes:
