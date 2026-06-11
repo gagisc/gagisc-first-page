@@ -51,18 +51,15 @@ jobs:
 
       - name: Build Quartz
         run: npx quartz build -d docs -v
+#
+#     - name: Deploy to Cloudflare Pages
+#       uses: AdrianGonz97/refined-cf-pages-action@v1
+#       with:
+#         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+#         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+#         githubToken: ${{ secrets.GITHUB_TOKEN }}
+#         projectName: quartz
+#         deploymentName: v5 Branch Preview
+#         branch: v5
+#         directory: public
 
-##
- #     - name: Deploy to Cloudflare Pages
- #       uses: AdrianGonz97/refined-cf-pages-action@v1
- #       with:
- #         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
- #         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
- #         githubToken: ${{ secrets.GITHUB_TOKEN }}
- #         projectName: quartz
- #         deploymentName: v5 Branch Preview
- #         branch: v5
- #         directory: public
-
-
-          ##
