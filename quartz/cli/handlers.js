@@ -736,7 +736,9 @@ export async function handleSync(argv) {
 
   if (argv.commit) {
     if (isLinkedContent) {
-      console.log(styleText("yellow", "Detected symlinked content folder; syncing directly through the link"))
+      console.log(
+        styleText("yellow", "Detected symlinked content folder; syncing directly through the link"),
+      )
     }
 
     const currentTimestamp = new Date().toLocaleString("en-US", {
