@@ -4,6 +4,7 @@ longform:
   title: welcome
   workflow: Default Workflow
   sceneFolder: /
-  scenes: []
+  scenes:
+    - crafts
   ignoredFiles: []
 ---
