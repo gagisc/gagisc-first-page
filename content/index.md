@@ -1,5 +1,5 @@
 ---
-title: gagisc
+title: Welcome
 ---
 
 Hello! My name is Ashraf and I go by [[https://github.com/gagisc|gagisc]] online.
