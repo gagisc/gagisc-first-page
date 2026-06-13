@@ -1,10 +1,8 @@
-
 This is a personal collection of all my current and previous projects, including tweaks i did for this website!
 
 ## About what I do
 
 Pretty much the blue-collar of the IT world, working as a cloud tradesman. I draft the blueprints, slap together the infra, patch whatever Terraform blew a gasket on, and pray the pipeline inspector doesn't red-tag my whole workflow.
-
 
 #### Intune Self-Heal
 

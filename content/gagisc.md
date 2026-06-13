@@ -1,4 +1,3 @@
-
 The idea for my username comes from something me and my friend **D** were working on when I was trying to learn some German words from him.
 
 The story goes like this: D was teaching me random German vocabulary like always, and we usually look at old paintings and their titles to then come up with synonyms and antonyms. We ended up staring at Arnold Böcklin’s 1882 painting _Heiliger Hain_, a beautiful painting that represents a sacred forest, also called a funeral forest, where people lay their loved ones to rest, and shows people paying respects to a grave. Going deep into words and translations and origins, these two words stuck with me:
