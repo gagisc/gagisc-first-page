@@ -28,3 +28,14 @@ body {
   background-color: #00264d;
   background-image: url("/static/lain-elevator.gif");
 }
+
+// ─── Popover / Page Preview
+:root[saved-theme="dark"] .popover {
+  background-color: #00264d;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+:root[saved-theme="light"] .popover {
+  background-color: #f7f4cd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
