@@ -39,3 +39,21 @@ body {
   background-color: #f7f4cd !important;
   border-color: rgba(0, 0, 0, 0.15);
 }
+
+// ─── Mobile Sidebar & Explorer ───────────────────────────────────────────────
+
+:root[saved-theme="dark"] .left.sidebar,
+:root[saved-theme="dark"] .explorer-content {
+  background-color: #00264d !important;
+}
+
+:root[saved-theme="light"] .left.sidebar,
+:root[saved-theme="light"] .explorer-content {
+  background-color: #f7f4cd !important;
+}
+
+// Default match dark
+.left.sidebar,
+.explorer-content {
+  background-color: #00264d !important;
+}
