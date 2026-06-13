@@ -1,13 +1,10 @@
-@use "./variables.scss" as *;
-
-// put your custom CSS here!
 // ─── Lain Elevator Background ───────────────────────────────────────────────
 
 body {
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: 25%;
+  background-size: 50%;
   transition: background-color 0.6s ease;
 }
 
@@ -29,15 +26,18 @@ body {
   background-image: url("/static/lain-elevator.gif");
 }
 
-// ─── Popover / Page Preview
+// ─── Popover / Page Preview ──────────────────────────────────────────────────
+
+:root[saved-theme="dark"] .popover,
 :root[saved-theme="dark"] .popover-inner {
   background-color: #00264d !important;
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.15) !important;
 }
 
+:root[saved-theme="light"] .popover,
 :root[saved-theme="light"] .popover-inner {
   background-color: #f7f4cd !important;
-  border-color: rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.15) !important;
 }
 
 // ─── Mobile Sidebar & Explorer ───────────────────────────────────────────────
