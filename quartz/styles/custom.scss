@@ -14,17 +14,17 @@ body {
 // Dark theme: deep navy/indigo
 :root[saved-theme="dark"] body {
   background-color: #00264d;
-  background-image: url("/lain-elevator.gif");
+  background-image: url("/static/lain-elevator.gif");
 }
 
 // Light theme: soft cream/yellow
 :root[saved-theme="light"] body {
   background-color: #FFFFCC;
-  background-image: url("/lain-elevator.gif");
+  background-image: url("/static/lain-elevator.gif");
 }
 
 // Default (before JS sets the attribute) — match dark
 body {
   background-color: #00264d;
-  background-image: url("/lain-elevator.gif");
+  background-image: url("/static/lain-elevator.gif");
 }
