@@ -1,3 +1,27 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+body {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  transition: background-color 0.6s ease;
+}
+
+// Dark theme: deep navy/indigo
+:root[saved-theme="dark"] body {
+  background-color: #111154;
+  background-image: url("/lain-elevator.gif");
+}
+
+// Light theme: soft cream/yellow
+:root[saved-theme="light"] body {
+  background-color: #FFFFCC;
+  background-image: url("/lain-elevator.gif");
+}
+
+// Default (before JS sets the attribute) — match dark
+body {
+  background-color: #111154;
+  background-image: url("/lain-elevator.gif");
+}
