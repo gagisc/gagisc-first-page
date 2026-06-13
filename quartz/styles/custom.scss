@@ -1,16 +1,19 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+// ─── Lain Elevator Background ───────────────────────────────────────────────
+
 body {
   background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 25%;
   transition: background-color 0.6s ease;
 }
 
 // Dark theme: deep navy/indigo
 :root[saved-theme="dark"] body {
-  background-color: #111154;
+  background-color: #00264d;
   background-image: url("/lain-elevator.gif");
 }
 
@@ -22,6 +25,6 @@ body {
 
 // Default (before JS sets the attribute) — match dark
 body {
-  background-color: #111154;
+  background-color: #00264d;
   background-image: url("/lain-elevator.gif");
 }
