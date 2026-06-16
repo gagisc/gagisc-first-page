@@ -1,20 +1,25 @@
+// ─── Global Theme Transition ─────────────────────────────────────────────────
+
+*, *::before, *::after {
+  transition: background-color 0.4s ease !important;
+}
+
 // ─── Lain Elevator Background ───────────────────────────────────────────────
 
 body {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: 30%;
-  transition: background-color 0.2s ease;
+  background-size: 50%;
 }
 
-// Dark theme: deep navy/indigo
+// Dark theme: deep navy
 :root[saved-theme="dark"] body {
   background-color: #00264d;
   background-image: url("/static/lain-elevator.gif");
 }
 
-// Light theme: soft cream/yellow
+// Light theme: soft cream
 :root[saved-theme="light"] body {
   background-color: #f7f4cd;
   background-image: url("/static/lain-elevator.gif");
@@ -42,6 +47,11 @@ body {
 
 // ─── Mobile Sidebar & Explorer ───────────────────────────────────────────────
 
+.left.sidebar,
+.explorer-content {
+  background-color: #00264d !important;
+}
+
 :root[saved-theme="dark"] .left.sidebar,
 :root[saved-theme="dark"] .explorer-content {
   background-color: #00264d !important;
@@ -50,11 +60,4 @@ body {
 :root[saved-theme="light"] .left.sidebar,
 :root[saved-theme="light"] .explorer-content {
   background-color: #f7f4cd !important;
-}
-
-// Default match dark
-.left.sidebar,
-.explorer-content {
-  background-color: #00264d !important;
-  transition: background-color 0.2s ease !important;
 }
