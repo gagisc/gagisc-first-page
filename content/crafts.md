@@ -35,14 +35,8 @@ A little [project](https://github.com/gagisc/intune-selfheal) that detects devic
 
 I've [customized](https://github.com/gagisc/gagisc.github.io) this website from the original Quartz 5 repo. A big thanks to all the amazing contributors and maintainers who made the project possible. Quartz 5 is a packaged website deployer that allows anyone to easily modify and upload their Obsidian notes directly into their website. A very cool concept that helped me learn and improve programmatically as well.
 	About what's been done on this website:
-<<<<<<< HEAD
 		- Added the lain background graphic from the hyprlain rice for linux systems
 		- Added the background night and day themes
 		- All custom, hand-written pages!
 
-No AI was used to make any part of the project or this website :smile:
-=======
-	- Background Lain graphics implemented from the Hyperlain rice
-	- Color theme added as well as cstom cvss config to sync match and fade the dark and light themes.
-	- All custom pages, hand-written!
-No AI was used to make any part of this project :smile:
+No AI was used to make any part of this project and website :smile:
