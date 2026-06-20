@@ -43,4 +43,4 @@ I've [customized](https://github.com/gagisc/gagisc.github.io) this website from 
 		- Added the background night and day themes
 		- All custom, hand-written pages!
 
-No AI was used to make any part of this project and website :smile:
+No AI was used to make any part of this project and website 😃
