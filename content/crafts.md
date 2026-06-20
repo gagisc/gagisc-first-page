@@ -10,10 +10,22 @@ This [[https://github.com/gagisc/dc-energy-savings|project]] uses Fuse FLIR A310
 
 I got an opportunity to test out this similar architecture at one of the many data centers I've had the opportunity to work at. A lot of factors go into fine tuning your energy consumption, as you need to know the mass of the air, cooling system capacity and the heat capacity of air calculated by:
 
-```
-\textbf{Energy to cool by } 1^\circ\mathrm{C}:\[Q = m c_p \Delta T\]where\[m = \rho V,\qquad \Delta T = 1^\circ\mathrm{C}\]
-\textbf{Cooling time estimate (with constant cooling power }P\text{):\[t \approx \frac{Q}{P} = \frac{m c_p \Delta T}{P}\]\textbf{Note:} The effective cooling power (cooling capacity) generally decreases as the space temperature approaches the setpoint, so $P$ may depend on temperature; the time estimate assumes $P$ is approximately constant over the interval.
-```
+$$
+\textbf{Energy to cool by } 1^\circ\mathrm{C}:
+\[
+Q = m c_p \Delta T
+\]
+where
+\[
+m = \rho V,\qquad \Delta T = 1^\circ\mathrm{C}
+\]
+
+\textbf{Cooling time estimate (with constant cooling power }P\text{):
+\[
+t \approx \frac{Q}{P} = \frac{m c_p \Delta T}{P}
+\]
+\textbf{Note:} The effective cooling power (cooling capacity) generally decreases as the space temperature approaches the setpoint, so $P$ may depend on temperature; the time estimate assumes $P$ is approximately constant over the interval.
+$$
 
 #### Intune Self-Heal
 
@@ -34,4 +46,3 @@ No AI was used to make any part of the project or this website :smile:
 	- Color theme added as well as cstom cvss config to sync match and fade the dark and light themes.
 	- All custom pages, hand-written!
 No AI was used to make any part of this project :smile:
->>>>>>> e68ea5df6542213c1a0dc193e3444c9eb5dfda46
