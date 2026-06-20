@@ -18,15 +18,19 @@ This [project](https://github.com/gagisc/dc-energy-savings) uses Fuse FLIR A310 
 
 I got an opportunity to test out this similar architecture at one of the many data centers I've had the opportunity to work at. A lot of factors go into fine tuning your energy consumption, as you need to know the mass of the air, cooling system capacity and the heat capacity of air calculated by:
 
-$$ t = \frac{C}{U A} \ln\!\left(\frac{T_{\text{room}} - T_{\text{out}}}{T_{\text{room}} - 1 - T_{\text{out}}}\right) \quad 
- $$
-$$ \text{where } \newline 
+$$ 
+t = \frac{C}{U A} \ln\!\left(\frac{T_{\text{room}} - T_{\text{out}}}{T_{\text{room}} - 1 - T_{\text{out}}}\right) \quad 
+$$
+ 
+$$ 
+\text{where } \newline 
 t=\text{time to cool by }1^\circ\text{C},\; \newline 
 C=\text{thermal capacitance J/}^\circ\text{C},\; \newline 
 U=\text{overall heat transfer coefficient},(BTU/hr·ft^2·^\circ F or W/m^2·^\circ C)\; \newline 
 A=\text{heat transfer area}, (\text{ft}^2 \text{ or m}^2) \; \newline
 T_{\text{room}}=\text{initial room temperature},(^\circ F or ^\circ C)\; \newline
-T_{\text{out}}=\text{outside temperature}, (^\circ F or ^\circ C) $$
+T_{\text{out}}=\text{outside temperature}, (^\circ F or ^\circ C) 
+$$
 
 The case study shown in this project was a (simulated) reading that was monitored over a set period before landing at a raise of a 2 degree setpoint for 10 minutes. This varies extremely between data centers and spaces inside the data center. For larger and tier 3 data centers, it is recommended to use professional monitoring solutions that use hundreds of sensors to control and detect anomalies in the cooling and electrical systems.
 
