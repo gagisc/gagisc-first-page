@@ -4,4 +4,4 @@ I love the cooling breeze of the lake as I sit at the banks and make my first dr
 Drawing always helps me notice the fine details in all things and makes me appreciative and immerses me deeply into the present moment. I was there for 2 hours and I saw many passer-bys  that were out there on their canoes and kayaks, just enjoying the great weather and calm waters, who have also made tiny little nameless contributions to my work, which makes me really happy. I've also enjoyed the little conversations, most of which I have forgotten, writing this a year after the events, which just makes me look at this sketch and my sketchbook, and I just want to make more sketches and meet more people.
 
 ![[IMG_23491.jpeg]]
-*Sitting by Lake Moab - [[gagisc]]*, 2025
+*Sitting by Lake Moab - [[gagisc]], 2025*
