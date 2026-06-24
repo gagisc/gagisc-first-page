@@ -11,4 +11,4 @@ _Heiliger Hain, by Arnold Böcklin_
 
 I liked this definition of the painting because it seemed pretty spooky, and very fitting in the context of the visuals.
 
-So now I’m **gagisc**: part sacred grove, part language‑lesson chaos, part art‑history detour, and 100% the result of two friends accidentally inventing a word that stuck way harder than expected.
+So now I’m **gagisc**, a combination of the two words that just landed coincidentally and stuck with me. I personally like to interpret it as "grove-like".
